@@ -1,0 +1,39 @@
+* {
+    margin: 0 auto;
+}
+
+.task_title {
+    font-family: Lato, sans-serif;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.pos_1 {
+    position: absolute;
+    background-color: red;
+    width: 300px;
+    /*bottom: 0;*/
+    /*right: 0;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*top: 0;*/
+    right: 0;
+    height: 300px;
+}
+
+.pos_2 {
+    position: absolute;
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    right: 0;
+    bottom: 0;
+}
+
+
+/*.pos_3 {*/
+/*position: absolute;*/
+/*background-color: red;*/
+/*}*/

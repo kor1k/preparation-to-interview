@@ -45,7 +45,8 @@
     background-color: blue;
     /*width: 300px;*/
     width: 300px;
-    display: table-cell; vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
     /*vertical-align: center;*/
     text-transform: uppercase;
     text-align: center;
@@ -82,10 +83,32 @@
 .flex-box {
     display: flex;
     justify-content: center;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    flex-wrap: nowrap;
     /*margin: 1rem;*/
     /*align-items: center;*/
     /*flex-direction: row;*/
+}
+
+.df_el {
+    box-sizing: border-box;
+}
+
+/*.flex-box:nth-of-child(even) {*/
+/*color: blue;*/
+/*}*/
+.df_el:nth-child(odd) {
+    color: blue;
+    background-color: tomato;
+    padding: 5px;
+    /*background-color: tomato;*/
+}
+
+.df_el:nth-child(even) {
+    color: red;
+    background-color: yellow;
+    padding: 5px;
+    /*background-color: tomato;*/
 }
 
 .flex-box > div {
@@ -122,4 +145,6 @@
 
 .almost_done {
     color: tomato;
+    font-size: 35px;
+    font-weight: 700;
 }

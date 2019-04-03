@@ -493,12 +493,26 @@
 
 // ______________sort start_________
 //Метод sort() сортирует массив на месте. Например:
-function sortArrayExample() {
-    var arr = [111231,200,10,20,50];
-    arr.sort();
-    alert(arr)
+// function sortArrayExample() {
+    // var arr = [111231, 200, 10, 20, 50];
+    // arr.sort();
+    // alert(arr) // not right sorting of elements!!!!1 //Это произошло потому, что по умолчанию sort сортирует, преобразуя элементы к строке.Поэтому и порядок у них строковый, ведь "2" > "15".
+
+// }
+// sortArrayExample();
+
+//  Правильная проверка на больше ли число!
+function compareNumeric(a, b) {
+    if (a > b) return 1;
+    if (a < b) return -1;
 }
-sortArrayExample();
+
+var arr = [ 1123, 2111231, 101091 ];
+
+arr.sort(compareNumeric);
+
+alert(arr);  // 1, 2, 15
+
 // ______________sort end_________
 
 

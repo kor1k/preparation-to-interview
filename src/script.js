@@ -104,6 +104,73 @@
 
 // --------------------------------------------------------Замыкания end------------------------------------------------------------------//
 
+// --------------------------------------------------------Objects start------------------------------------------------------------------//
+
+// function objectExample() {
+// obj = new Object(); (1)
+// var person = {}; // (2)
+// person.name = 'Kostya';
+// person.age = '19';
+// person.hobby = 'Programming';
+// alert('Name: ' + person.name);
+// alert('Age: ' + person.age);
+// ________
+// delete person.name;
+// if ("name" in person) {
+//     alert('Name is here!')
+// } else {
+//     alert('Name is not here!')
+// }
+// ________
+// alert(person.lalala);
+// ________
+// var person = {
+//     name: 'Kostya',
+//     age: '19',
+//     hobby: 'Programming'
+// };
+//
+// alert(person.asdadasd === undefined);
+// alert(person.name === undefined);
+// alert(person.age === undefined);
+// ________
+// var user = {
+//     name: "Таня",
+//     age: 25,
+//     mood: 'Fine',
+//     size: {
+//         top: 90,
+//         middle: 60,
+//         bottom: 90
+//     }
+// };
+//
+// if (user.size.top === 90) {
+//     alert(user.mood)
+// } else {
+//     alert(user.name + ' плачет')
+// }
+// ________
+// alert(user.name) // "Таня"
+// alert(user.size.top) // 90
+// alert(user.mood); //fine
+// }
+// objectExample();
+
+// --------------------------------------------------------Objects end------------------------------------------------------------------//
+
+// -----------------------------------------------Объекты: перебор свойств start------------------------------------------------------------------//
+
+function objectPereborExample() {
+
+}
+objectPereborExample();
+
+// -----------------------------------------------Объекты: перебор свойств end------------------------------------------------------------------//
+
+
+
+
 
 
 

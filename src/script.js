@@ -101,6 +101,15 @@
 // }
 // console.log(closuresExample());
 // closuresExample();
+//___________
+// function init() {
+//     var name = "Mozilla"; // name is a local variable created by init
+//     function displayName() { // displayName() is the inner function, a closure
+//         alert (name); // displayName() uses variable declared in the parent function
+//     }
+//     displayName();
+// }
+// init();
 
 // --------------------------------------------------------Замыкания end------------------------------------------------------------------//
 
@@ -161,12 +170,117 @@
 
 // -----------------------------------------------Объекты: перебор свойств start------------------------------------------------------------------//
 
-function objectPereborExample() {
+// function objectPereborExample() {
+//     var menu = {
+//         width: 300,
+//         height: 200,
+//         title: 'Menu',
+//     }
+//     // for (var key in menu){
+//     //     alert("Key: " + key + " значение" + menu[key])
+//     // }
+//     var counter = 0;
+//     for (var key in menu) {
+//         counter++;
+//     }
+//     alert("Всего свойств: " + counter)
+// }
+//
+// objectPereborExample();
 
-}
-objectPereborExample();
+// function sumOfSalariesInObject() {
+//     var salaries = {
+//         'Katya': 200,
+//         'Anya': 300,
+//         'Vadim': 900
+//     }
+//     var counter = 0;
+//
+//     for (var key in salaries){
+//         alert(salaries[key])
+// counter += salaries[key]
+// }
+// alert('Sum of salaries is: ' + counter)
+// }
+//
+// sumOfSalariesInObject();
+
+// function biggestSalary() {
+//     var salaries = {
+//         'Andy': 700,
+//         'Mary': 400,
+//         'Anton': 500,
+//         'Slava': 1000
+//     };
+//     var biggest = 0;
+//     for (var key in salaries) {
+//         biggest += salaries[key]
+//     }
+//     alert('the biggest salary is: ' + biggest + '$');
+// }
+// biggestSalary();
+
 
 // -----------------------------------------------Объекты: перебор свойств end------------------------------------------------------------------//
+
+
+// ---------------------------------------------Объекты: передача по ссылкке end------------------------------------------------------------------//
+
+// function peredachaPoSsilkeObject() {
+//     var user = {
+//         name: 'Vasya',
+//         age: 30
+//     };
+//     var clone = {};
+//     for (var key in user) {
+//         clone[key] = user[key];
+//     }
+//     clone.name = 'Petya';
+//     alert(user.name)
+//     // var admin = user;
+//     // admin.name = 'Petya';
+//     // alert(user.name)
+// }
+// peredachaPoSsilkeObject();
+// ___________
+// var time = {
+//     year: 2345,
+//     month: 11,
+//     day: 10,
+//     hour: 11,
+//     minute: 12,
+//     second: 13,
+//     microsecond: 123456
+// }
+//
+// console.log(time); // (*)
+// time.microsecond++; // (**)
+//
+// console.log(time);
+// time.microsecond++;
+//
+// console.log(time);
+// time.microsecond++;
+// ___________
+
+// ---------------------------------------------Объекты: передача по ссылкке end------------------------------------------------------------------//
+
+// ---------------------------------------------Arrays start------------------------------------------------------------------//
+
+function arrayExample() {
+    var emptyArr = [];
+    var fruitsArr = ['Apple', 'Orange', 'Kiwi', 'Mango'];
+    alert(fruitsArr[0]);
+    alert(fruitsArr[1]);
+    alert(fruitsArr[2]);
+    alert(fruitsArr[3]);
+}
+
+arrayExample();
+
+// ---------------------------------------------Arrays end------------------------------------------------------------------//
+
+
 
 
 

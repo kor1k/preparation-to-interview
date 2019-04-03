@@ -381,21 +381,140 @@
 
 // Задача на массивы
 // function arrayExample() {
-    // var arr = [1, 2, 3, 4, 5, 'last element of array'];
-    // // alert(arr.length); // 6
-    // alert(arr.pop());
-    // // alert(arr.length) // 5
-    // _______
-    // var goods = ["Яблоко", "Груша", "Слива",'Макароны'];
-    // var lastItem = goods[goods.length - 1]; // получить последний элемент
-    // alert(lastItem)
-    // var goods = ['Car', 'Котлета', 'Beef', 'Beer'];
-    // goods.push('Sebek') // one way
-    // goods[goods.length] = 'Компьютер'; // 2nd way
-    // alert(goods)
+// var arr = [1, 2, 3, 4, 5, 'last element of array'];
+// // alert(arr.length); // 6
+// alert(arr.pop());
+// // alert(arr.length) // 5
+// _______
+// var goods = ["Яблоко", "Груша", "Слива",'Макароны'];
+// var lastItem = goods[goods.length - 1]; // получить последний элемент
+// alert(lastItem)
+// var goods = ['Car', 'Котлета', 'Beef', 'Beer'];
+// goods.push('Sebek') // one way
+// goods[goods.length] = 'Компьютер'; // 2nd way
+// alert(goods)
 // }
 //
 // arrayExample();
+
+// ______________split start_________
+// function splitArrayExample() {
+//     var names = 'Маша, Петя, Марина, Василий';
+//
+//     var arr = names.split(', ');
+//
+//     for (var i = 0; i < arr.length; i++) {
+//         alert('Вам сообщение: ' + arr[i]);
+//     }
+//     var str = "loremasdasdad";
+//     alert(str.split('')); // т,е,с,т
+// }
+//
+// splitArrayExample();
+// ______________split end_________
+
+
+// ______________join start_________
+// function joinArraysExample() {
+//     var arr = ['Kolya', 'Vasya', 'Petya', 'Anya'];
+//     var joinedArr = arr.join('+++');
+//     alert(joinedArr)
+// }
+// joinArraysExample();
+// ______________join end_________
+
+
+// ______________deleteFromArr start_________
+// function deleteFromArr() {
+//     var arr = [1, 2, 3, 4, 5];
+//     delete arr[0];
+//     alert(arr)
+// }
+//
+// deleteFromArr();
+// ______________deleteFromArr end_________
+
+// ______________splice start_________
+//Метод splice – это универсальный раскладной нож для работы с массивами. Умеет все: удалять элементы, вставлять элементы, заменять элементы – по очереди и одновременно.
+// Удаление спомощью splice
+// function deleteWithSplice() {
+//     // var arr = ['I am', 'preparing', ' to ', 'interview'];
+//     // arr.splice(1, 1); // начиная с позиции 1, удалить 1 элемент
+//     // alert(arr) // удалился preparing
+//     // __________
+//     // var arr = ['I am', 'preparing', ' to ', 'interview'];
+//     // arr.splice(0,1,'You are');
+//     // alert(arr) // you are preapearing to interview
+//     // __________
+//     // var arr = ["Я", "сейчас", "изучаю", "JavaScript"];
+//     // arr.splice(0, 3, "Мы", "изучаем") // удалить 3 первых элемента и добавить другие вместо них
+//     // alert(arr) // теперь ["Мы", "изучаем", "JavaScript"]
+//     // _________
+//     var arr = ["Я", "сейчас", "изучаю", "JavaScript"];
+//     var removed = arr.splice(0, 2);// удалить 2 первых элемента
+//     alert(removed); // "Я", "сейчас" <-- array of removed elements
+//     // _________
+//     // Метод splice также может вставлять элементы без удаления, для этого достаточно установить deleteCount в 0
+//     var arr = ["Я", "изучаю", "JavaScript"];
+//     // с позиции 2
+//     // удалить 0
+//     // вставить "сложный", "язык"
+//     arr.splice(2, 0, "сложный", "язык");
+//     alert(arr); // "Я", "изучаю", "сложный", "язык", "JavaScript"
+// }
+// deleteWithSplice();
+// ______________splice end_________
+
+
+// ______________slice start_________
+// Метод slice(begin, end) копирует участок массива от begin до end, не включая end. Исходный массив при этом не меняется.
+// function sliceArrayExample() {
+//     var arr = ['I wrote', 'this text', 'for example'];
+// var arr2 = arr.slice(0, 2)
+// alert(arr2) // i wrote this text
+// var arr2 = arr.slice(2, 4) //for example
+// alert(arr2)
+// _______
+// Если не указать end – копирование будет до конца массива:
+// var arr3 = arr.slice(1);
+// alert(arr3) // взять все элементы, начиная с номера 1
+// _________
+// Можно использовать отрицательные индексы, они отсчитываются с конца:
+// var4 = arr.slice(-0) // копировать от 2-го элемента с конца и дальше
+// alert(var4)
+// ________
+//Если вообще не указать аргументов – скопируется весь массив:
+// var5 = arr.slice();
+// alert(var5)// i wrote this text for example
+// }
+// sliceArrayExample();
+// ______________slice end_________
+
+
+// ______________sort start_________
+//Метод sort() сортирует массив на месте. Например:
+function sortArrayExample() {
+    var arr = [111231,200,10,20,50];
+    arr.sort();
+    alert(arr)
+}
+sortArrayExample();
+// ______________sort end_________
+
+
+// ______________theme start_________
+
+// ______________theme end_________
+
+
+// ______________theme start_________
+
+// ______________theme end_________
+
+
+// ______________theme start_________
+
+// ______________theme end_________
 
 
 // ---------------------------------------------Arrays end------------------------------------------------------------------//

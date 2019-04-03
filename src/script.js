@@ -1,3 +1,10 @@
+// function amountOfPrepearedJsThemes() {
+//     let lengthOfTasks = document.getElementsByClassName('js_task');
+//     // alert(lengthOfTasks.length)
+//     lengthOfTasks.onmouseup == alert(lengthOfTasks.length)
+// }
+// amountOfPrepearedJsThemes();
+
 // --------------------------------------------------------forEach start------------------------------------------------------------------//
 
 // function forEachExample() {
@@ -328,5 +335,68 @@
 // unshiftArrayExample();
 // ______________unshift end_________
 
+// function eat(arr) {
+//     arr.pop();
+// }
+// var arr = ["нам", "не", "страшен", "серый", "волк"];
+// alert('length ' + arr.length); // 5
+// eat(arr);
+// eat(arr);
+// alert('new length after eat ' + arr.length); //3
+
+
+// Array with empty elements
+// var a = [];
+// a[0] = 0;
+// a[100] = 100;
+// alert(a); // 0,,,,,5
+
+// function pereborOfArray() {
+//     var arr = ['Mango', 'Glock-18', 'Mercedes', 'BMW', 'Building'];
+//     for (var i = 0; i < arr.length; i++) {
+//         alert(arr[i])
+//     }
+// }
+// pereborOfArray();
+
+// function newArayCreating() {
+//     // var arr = new Array("Яблоко", "Груша", "и т.п.");
+//     var arr = new Array(2, 3);
+//     alert(arr); //2,3
+//     var arr2 = new Array(10);
+//     alert(arr2[2]) //undefined
+// }
+// newArayCreating();
+
+//Многомерные массивы
+// function mnogoMernieArrays() {
+//     var matrix = [
+//         [1,2,3],
+//         [4,5,6],
+//         [7,8,9]
+//     ]
+//     alert(matrix[0][1])
+// }
+// mnogoMernieArrays();
+
+// Задача на массивы
+// function arrayExample() {
+    // var arr = [1, 2, 3, 4, 5, 'last element of array'];
+    // // alert(arr.length); // 6
+    // alert(arr.pop());
+    // // alert(arr.length) // 5
+    // _______
+    // var goods = ["Яблоко", "Груша", "Слива",'Макароны'];
+    // var lastItem = goods[goods.length - 1]; // получить последний элемент
+    // alert(lastItem)
+    // var goods = ['Car', 'Котлета', 'Beef', 'Beer'];
+    // goods.push('Sebek') // one way
+    // goods[goods.length] = 'Компьютер'; // 2nd way
+    // alert(goods)
+// }
+//
+// arrayExample();
+
 
 // ---------------------------------------------Arrays end------------------------------------------------------------------//
+

@@ -62,6 +62,54 @@
 
 // --------------------------------------------------------map end------------------------------------------------------------------//
 
+// --------------------------------------------------------string methods start------------------------------------------------------------------//
+
+// function stringMethodsExample() {
+// var str = 'My name is Kostya';
+// str = str[1] + str[5] + str[5] + str[1];
+// alert(str.charAt(5));
+// alert(str.length);
+// alert(str);
+// alert(str.indexOf('My'))
+// _____________
+// var str = "Ослик Иа-Иа посмотрел на виадук"; // ищем в этой строке
+// var target = "на"; // цель поиска
+//
+// var pos = -1;
+// while ((pos = str.indexOf(target, pos + 1)) !== -1) {
+//     alert(pos);
+// }
+// _____________
+// var str = 'Substring_test';
+// alert(str.substring(10,14)) //test
+// alert(str.substring(0,3)) //Sub
+// _____________
+// var str = "Substr_test";
+// alert(str.substr(0, 3)) //Sub
+// alert(str.substr(0, 6)) //substr
+// }
+// stringMethodsExample();
+
+// --------------------------------------------------------string methods end------------------------------------------------------------------//
+
+// --------------------------------------------------------Замыкания start------------------------------------------------------------------//
+
+// function closuresExample(a) {
+//     return function (b) {
+//         return a * b;
+//     }
+// }
+// console.log(closuresExample());
+// closuresExample();
+
+// --------------------------------------------------------Замыкания end------------------------------------------------------------------//
+
+
+
+
+
+
+
 
 
 

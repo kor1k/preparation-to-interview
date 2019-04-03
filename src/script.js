@@ -267,31 +267,66 @@
 
 // ---------------------------------------------Arrays start------------------------------------------------------------------//
 
-function arrayExample() {
-    var emptyArr = [];
-    var fruitsArr = ['Apple', 'Orange', 'Kiwi', 'Mango'];
-    alert(fruitsArr[0]);
-    alert(fruitsArr[1]);
-    alert(fruitsArr[2]);
-    alert(fruitsArr[3]);
-}
+// function arrayExample() {
+//     var emptyArr = [];
+//     var fruitsArr = ['Apple', 'Orange', 'Kiwi', 'Mango'];
+//     var arrWithObjNum_and_Text = [1, 'two', {name: 'korik', age: '19'}, '4'];
+//     fruitsArr[2] = 'VALERA';
+//     fruitsArr[0] = 'MAXIMKA';
+//     fruitsArr[4] = 'PETRO';
+//     // alert(fruitsArr[0]);
+//     // alert(fruitsArr[1]);
+//     // alert(fruitsArr[2]);
+//     // alert(fruitsArr[3]);
+//     // alert(fruitsArr[4]);
+//     alert(arrWithObjNum_and_Text[1]);
+// }
+// arrayExample();
 
-arrayExample();
+// ______________pop start_________
+// Удаляет последний элемент из массива и возвращает его:
+// function arrayPopExample() {
+//     var cars = ['Mercedes Benz', 'BWM', 'Volvo'];
+//     alert(cars.pop()); // deleted last el in arr
+//     alert(cars)
+// }
+//
+// arrayPopExample();
+// ______________push start_________
+
+// ______________push start_________
+// Добавляет элемент в конец массива:
+// function arrayPushExample() {
+//     var cars = ['Mercedes Benz', 'BWM', 'Volvo'];
+//     cars.push('Bugatti', 'basdjasd');
+//     alert(cars);
+//     // две равнозначные строки
+//     alert('length of arr is: ' + cars.length);
+//     alert(cars.push())
+//     // две равнозначные строки
+// }
+// arrayPushExample();
+// ______________push start_________
+
+// ______________shift start_________
+// Удаляет из массива первый элемент и возвращает его:
+// function shiftArrayExample() {
+//     var fruits = ['Apple', 'Pineapple','Mango','Lemon'];
+//     fruits.shift();
+//     alert(fruits);
+// }
+// shiftArrayExample();
+// ______________shift end_________
+
+// ______________unshift start_________
+// Добавляет элемент в начало массива:
+// function unshiftArrayExample() {
+//     var rifles = ['glock','ak-47','m4a1','awp','deagle'];
+//     rifles.unshift('PHP');
+//     alert(rifles)
+// }
+// unshiftArrayExample();
+// ______________unshift end_________
+
 
 // ---------------------------------------------Arrays end------------------------------------------------------------------//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

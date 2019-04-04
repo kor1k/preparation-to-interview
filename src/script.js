@@ -603,3 +603,22 @@
 
 // ---------------------------------------------Arrays end------------------------------------------------------------------//
 
+//_______________call/apply start______________
+// function showFullName() {
+//     alert(this.firstName + " " + this.lastName);
+// }
+//
+// var user = {
+//     firstName: "Kostya",
+//     lastName: "Yelskiy"
+// };
+//
+// // функция вызовется с this=user
+// showFullName.call(user) // "Василий Петров"
+//_______________call/apply end______________
+
+
+// Поиск елементов в ДОМ
+// https://learn.javascript.ru/searching-elements-dom#itogo
+// https://learn.javascript.ru/searching-elements-dom#itogo
+// https://learn.javascript.ru/searching-elements-dom#itogo

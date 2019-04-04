@@ -494,28 +494,91 @@
 // ______________sort start_________
 //Метод sort() сортирует массив на месте. Например:
 // function sortArrayExample() {
-    // var arr = [111231, 200, 10, 20, 50];
-    // arr.sort();
-    // alert(arr) // not right sorting of elements!!!!1 //Это произошло потому, что по умолчанию sort сортирует, преобразуя элементы к строке.Поэтому и порядок у них строковый, ведь "2" > "15".
-
+// var arr = [111231, 200, 10, 20, 50];
+// arr.sort();
+// alert(arr) // not right sorting of elements!!!!1 //Это произошло потому, что по умолчанию sort сортирует, преобразуя элементы к строке.Поэтому и порядок у них строковый, ведь "2" > "15".
 // }
 // sortArrayExample();
-
 //  Правильная проверка на больше ли число!
-function compareNumeric(a, b) {
-    if (a > b) return 1;
-    if (a < b) return -1;
-}
-
-var arr = [ 1123, 2111231, 101091 ];
-
-arr.sort(compareNumeric);
-
-alert(arr);  // 1, 2, 15
-
+// function compareNumeric(a, b) {
+//     if (a > b) return 1;
+//     if (a < b) return -1;
+// }
+// var arr = [ 1123, 2111231, 101091,11111111111111 ];
+// arr.sort(compareNumeric);
+// alert(arr);  //  правильно вывело
 // ______________sort end_________
 
 
+// ______________reverse start_________
+// function reverseArrExample() {
+//     var arr = [1, 2, 3, 4, 5];
+//     alert(arr)
+//     var arrReversed = arr.reverse()
+//     alert(arrReversed)
+// }
+// reverseArrExample();
+// ______________reverse end_________
+
+
+// ______________concat start_________
+//Метод arr.concat создаёт новый массив, в который копируются элементы из arr
+// function concatArrExample() {
+//     var arr = [1, 2, 3, 4, 5];
+//     alert(arr)
+//     var newArr = arr.concat(6, 7, 8, 9, 10);
+//     alert(newArr)
+// _____
+// var arr = [1, 2];
+// var newArr = arr.concat([3, 4], 5); // то же самое, что arr.concat(3,4,5)
+// alert( newArr ); // 1,2,3,4,5
+// }
+// concatArrExample();
+// ______________concat end_________
+
+// ______________indexOf/lastIndexOf start_________
+// function indexOflastIndexOfArrayExample() {
+//     var arr = [1, 0, false];
+//     alert( arr.indexOf(0) ); // 1
+//     alert( arr.indexOf(false) ); // 2
+//     alert( arr.indexOf(null) ); // -1
+// }
+// indexOflastIndexOfArrayExample();
+// ______________indexOf/lastIndexOf end_________
+
+// ИТОГ
+// push/pop, shift/unshift, splice – для добавления и удаления элементов.
+//     join/split – для преобразования строки в массив и обратно.
+//     slice – копирует участок массива.
+//     sort – для сортировки массива. Если не передать функцию сравнения – сортирует элементы как строки.
+//     reverse – меняет порядок элементов на обратный.
+//     concat – объединяет массивы.
+//     indexOf/lastIndexOf – возвращают позицию элемента в массиве (не поддерживается в IE8-).
+
+// ______________map start_________
+// var languages = ['jQuery', 'JavaScript', 'Java', 'CSS', 'HTML'];
+// function mapArrExample() {
+//     var arrLengths = languages.map(function (languages) {
+//         return languages.length;
+//     });
+//     alert(arrLengths)
+// }
+// mapArrExample();
+// ______________map end_________
+
+
+// ______________every/some start_________
+// Эти методы используются для проверки массива.
+// var arr = [-1, -200, -20, 10, -30, 50, 1000];
+// function everySomeArrExample(arr) {
+//     return arr > 0;
+// }
+// alert(arr.every(everySomeArrExample)) // false, не все положительные
+// alert(arr.some(everySomeArrExample)) // true, есть хоть одно положительное
+// everySomeArrExample();
+// ______________every/some end_________
+
+
 // ______________theme start_________
 
 // ______________theme end_________
@@ -529,6 +592,13 @@ alert(arr);  // 1, 2, 15
 // ______________theme start_________
 
 // ______________theme end_________
+
+// ИТОГ
+// forEach – для перебора массива.
+//     filter – для фильтрации массива.
+//     every/some – для проверки массива.
+//     map – для трансформации массива в массив.
+//     reduce/reduceRight – для прохода по массиву с вычислением значения.
 
 
 // ---------------------------------------------Arrays end------------------------------------------------------------------//

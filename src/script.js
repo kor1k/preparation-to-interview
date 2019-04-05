@@ -622,3 +622,17 @@
 // https://learn.javascript.ru/searching-elements-dom#itogo
 // https://learn.javascript.ru/searching-elements-dom#itogo
 // https://learn.javascript.ru/searching-elements-dom#itogo
+function countRabbits() {
+    for (var i = 1; i <= 4; i++) {
+        alert("Кролик номер: " + i);
+    }
+}
+
+// click function
+hello1.onclick = function () {
+    return alert('Click onclick')
+};
+
+hello2.onmouseup = function () {
+    return alert('Click Onmouseup')
+}

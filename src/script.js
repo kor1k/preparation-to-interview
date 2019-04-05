@@ -622,6 +622,8 @@
 // https://learn.javascript.ru/searching-elements-dom#itogo
 // https://learn.javascript.ru/searching-elements-dom#itogo
 // https://learn.javascript.ru/searching-elements-dom#itogo
+
+// __________simple events start___________
 function countRabbits() {
     for (var i = 1; i <= 4; i++) {
         alert("Кролик номер: " + i);
@@ -635,4 +637,43 @@ hello1.onclick = function () {
 
 hello2.onmouseup = function () {
     return alert('Click Onmouseup')
+};
+// __________simple events end___________
+var table = document.getElementById('bagua-table');
+
+var selectedTd;
+
+table.onclick = function (event) {
+    var target = event.target;
+
+    while (target != this) {
+        if (target.tagName == 'TD') {
+            highlight(target);
+            return;
+        }
+        target = target.parentNode;
+    }
 }
+
+function highlight(node) {
+    if (selectedTd) {
+        selectedTd.classList.remove('highlight');
+    }
+    selectedTd = node;
+    selectedTd.classList.add('highlight');
+}
+
+// var seclectedTag;
+//
+// table.onclick = function (event) {
+//     var target = event.target;
+//     if (target.tagName != 'TD') return;
+//     highlight(target);
+// };
+// function highlight(node) {
+//     if (seclectedTag) {
+//         seclectedTag.classList.remove('highlight');
+//     }
+//     selectedTd = node;
+//     selectedTd.classList.add('highlight')
+// }

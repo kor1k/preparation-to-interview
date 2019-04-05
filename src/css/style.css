@@ -67,7 +67,7 @@ input {
 }
 
 .pos_1 {
-    position: absolute;
+    position: relative;
     background-color: red;
     text-align: center;
     font-size: 20px;
@@ -313,4 +313,80 @@ input {
 
 #bagua-table .highlight {
     background: red;
+}
+
+#color {
+    transition-property: background-color;
+    transition-duration: 3s;
+    transition: font-size 3s, color 2s, width 2s, height 2.5s;
+}
+
+#digit {
+    width: .5em;
+    overflow: hidden;
+    font: 32px "Courier New", monospace;
+}
+
+#stripe.animate {
+    /*text-align: center;*/
+    margin-left: -174px;
+    transition-property: margin-left;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+}
+
+#boat {
+    margin-left: 0;
+    cursor: pointer;
+    transition: margin-left 3s ease-in-out;
+}
+/* переворот картинки через CSS */
+
+.back {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: flipH();
+    /* IE9- */
+}
+
+@keyframes go-left-right {   /* назовём анимацию: "go-left-right" */
+    from {
+        left: 0;               /* от: left: 0px */
+    }
+    to {
+        left: calc(100% - 55px); /* до: left: 100%-50px */
+    }
+}
+
+
+.progress {
+    /* применить анимацию go-left-right */
+    /* продолжительность 3s */
+    /* количество раз: бесконечное (infinite) */
+    /* менять направление анимации каждый раз (alternate) */
+    animation: go-left-right 4s infinite alternate;
+    position: relative;
+    border: 2px solid green;
+    width: 70px;
+    height: 30px;
+    /*display: flex;*/
+    /*margin: 0 auto;*/
+    /*align-items: flex-start;*/
+    background: lime;
+
+}
+
+
+.red {
+    color:green;
+}
+.green {
+    color:red;
+}
+.red .green {
+    color:yellow;
+}
+
+#black {
+    color:black;
 }

@@ -11,13 +11,30 @@
 </head>
 <body>
 <div>
+
+    <img src="https://js.cx/clipart/boat.png" id="boat">
+    <div class="progress"></div>
+    Какой цвет у текста будет, если классы применить таким образом:
+
+    <div class="red green">красный</div>
+
+
+    А в таком случае:
+
+    <div class="red"><div class="green">красный</div></div>
+
+
+    А в таком:
+
+    <div class="red"><div class="green" id="black">черный</div></div>
+
     <!--<nav>-->
     <!--<p>Fixed nav_top for example.</p>-->
     <!--</nav>-->
     <div class="task_title almost_done">Positions</div>
     <div class="positions">
-        <div class="pos_1">position absolute</div>
-        <div class="pos_2">position relative</div>
+        <div class="pos_1">position relative</div>
+        <div class="pos_2">position absolute</div>
     </div>
     <div class="task_title">Box Sizing</div>
     <div class="box-sizing">
@@ -90,7 +107,11 @@
     <input type="button" id="hello1" value="click (onclick)"/>
     <input type="button" id="hello2" value="click (onmouseup)"/>
     <a style="text-align: center" href="https://learn.javascript.ru/event-bubbling#itogo">Итог вспылтия</a>
-        <div class="task_title">Delegation</div>
+    <div class="task_title">Animations
+        <button id="color">Click me</button>
+        <div id="digit"><span id="stripe">0123456789</span></div>
+    </div>
+    <div class="task_title">Delegation</div>
     <div class="delegation_example" style="margin-left: 31rem;">
         <table id="bagua-table">
             <tr>

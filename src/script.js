@@ -1,3 +1,28 @@
+boat.onclick = function() {
+
+    this.onclick = null; // только первый клик сработает
+
+    var times = 1;
+
+    function go() {
+        if (times % 2) {
+            boat.classList.remove('back');
+            boat.style.marginLeft = 100 * times + 200 + 'px';
+        } else {
+            boat.classList.add('back');
+            boat.style.marginLeft = 100 * times - 200 + 'px';
+        }
+
+    }
+
+    go();
+
+    boat.addEventListener('transitionend', function() {
+        times++;
+        go();
+    });
+}
+
 // function amountOfPrepearedJsThemes() {
 //     let lengthOfTasks = document.getElementsByClassName('js_task');
 //     // alert(lengthOfTasks.length)
@@ -639,6 +664,8 @@ hello2.onmouseup = function () {
     return alert('Click Onmouseup')
 };
 // __________simple events end___________
+
+// __________animations start____________
 var table = document.getElementById('bagua-table');
 
 var selectedTd;
@@ -663,6 +690,14 @@ function highlight(node) {
     selectedTd.classList.add('highlight');
 }
 
+color.onclick = function () {
+    this.style.backgroundColor = 'blue';
+    this.style.fontSize = '36px';
+    this.style.width = '200px';
+    this.style.height = '120px';
+    this.style.color = 'black';
+}
+
 // var seclectedTag;
 //
 // table.onclick = function (event) {
@@ -677,3 +712,9 @@ function highlight(node) {
 //     selectedTd = node;
 //     selectedTd.classList.add('highlight')
 // }
+
+stripe.onclick = function() {
+    stripe.classList.add('animate');
+};
+
+// __________animations end____________

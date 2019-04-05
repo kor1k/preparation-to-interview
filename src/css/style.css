@@ -1,6 +1,7 @@
 * {
     margin: 0 auto;
     font-family: Lato, sans-serif;
+    list-style: inherit;
     /*text-align: center;*/
 }
 
@@ -182,6 +183,7 @@ input {
     margin-bottom: 40px;
     /*flex-direction: column;*/
 }
+
 
 .javascript_themes > .js_task:first-child {
     margin-top: 20px;

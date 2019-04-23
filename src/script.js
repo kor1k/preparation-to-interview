@@ -1,4 +1,4 @@
-
+// alert('test async defer')
 boat.onclick = function () {
 
     this.onclick = null; // только первый клик сработает

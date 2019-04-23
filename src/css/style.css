@@ -5,6 +5,21 @@
     /*text-align: center;*/
 }
 
+div p {
+    color: red;
+    font-size: 20px;
+}
+
+div ~ p {
+    color: green;
+    font-size: 15px;
+}
+
+div + p {
+    color: #0033ff;
+    font-size: 40px;
+}
+
 nav {
     position: fixed;
     z-index: 1;
@@ -42,6 +57,8 @@ button {
 
 .positions {
     height: 100vh;
+    /*position: absolute;*/
+    /*right: 0;*/
 }
 
 .task_title {
@@ -68,7 +85,7 @@ input {
 }
 
 .pos_1 {
-    position: relative;
+    position: absolute;
     background-color: red;
     text-align: center;
     font-size: 20px;
@@ -80,7 +97,7 @@ input {
     /*bottom: 0;*/
     /*right: 0;*/
     /*left: 0;*/
-    top: 100px;
+    /*top: 100px;*/
     display: table-cell;
     vertical-align: middle;
     /*left: 0;*/
@@ -97,8 +114,8 @@ input {
     background-color: blue;
     /*width: 300px;*/
     width: 300px;
-    display: table-cell;
-    vertical-align: middle;
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
     /*vertical-align: center;*/
     text-transform: uppercase;
     text-align: center;
